@@ -51,6 +51,11 @@ nav a:hover{
 }
 
 
+.nav-important{
+    text-decoration: none;
+}
+
+
 @media (max-width:700px){
     header{
         flex-direction: row;
@@ -79,6 +84,10 @@ nav a:hover{
 
 }
 
+
+.carousel-item ,h1, p{
+    color: white;
+}
 
 
 
@@ -116,6 +125,9 @@ nav a:hover{
     margin-bottom: 100px;
     
 }
+
+
+.article ,h1
 
 .article ,p{
     color: black;
@@ -458,4 +470,5 @@ footer{
     text-align: center;
 
 }
+
 
