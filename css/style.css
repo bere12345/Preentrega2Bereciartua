@@ -106,6 +106,12 @@ nav a:hover{
 
 }
 
+
+.article-two ,p{
+    margin-right: 30px;
+}
+
+
 .article{
     margin-bottom: 100px;
     
@@ -369,6 +375,12 @@ background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg)
     background-repeat: no-repeat;
     
     
+}
+
+@media screen and (max-width: 768px){
+    .contact-page{
+        background-size: contain;
+    }
 }
 
 form {
