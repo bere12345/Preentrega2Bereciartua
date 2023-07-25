@@ -1,0 +1,449 @@
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* header*/
+
+
+
+
+header{
+    display: flex;
+    background-color: #294f8c;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: auto;
+}
+
+
+.header-info{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+
+}
+
+nav a{
+    font-weight: 600;
+    
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: row;
+    }
+
+    nav{
+        padding: 40px 0px 20px;
+    }
+
+    .title-argentina{
+        display: flex;
+        align-items: center;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .logo{
+        align-items: flex-start;
+        justify-content: center;
+        }
+}
+
+.carousel-inner ,h5,p{
+    color: white;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+/*decoracion pagina principal*/
+
+.body-content{
+    background-color: #eee;
+    width: 100%;
+    margin: 1.9em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.content{
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.col{
+    justify-content: center;
+    display: flex;
+
+}
+
+.article{
+    margin-bottom: 100px;
+    
+}
+
+.article ,p{
+    color: black;
+    margin-top: 30px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.style-carousel p{
+    color: white;
+}
+
+#carouselExampleDark{
+    margin-right: 40px;
+}
+
+
+.paragraph-barracas{
+    margin-left: 40px;
+}
+
+.image-femenino{
+    border: black solid 6px;
+    display: flex;
+}
+
+.paragraph-femenino{
+    margin-left: 40px;
+}
+
+
+
+
+/* decoracion pagina noticias*/
+
+.article-content p{
+    font-weight: bold;
+}
+
+.notice-content{
+    display: grid;
+    margin: 1.19em auto;
+    grid-template-columns: repeat(2,1fr);
+    background: #eee;
+    margin-left: px;
+}
+
+.image-tapia{
+    border: black solid 5px;
+}
+
+.column-images{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: end;
+    margin-left: 50px;
+}
+
+
+.image-secondary{
+    border: black solid 5px;
+    display: flex;
+    
+}
+
+.paragraph-kinesiologos{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.article-content p{
+    margin-left: 20px;
+}
+
+.article-content h2{
+    margin-left: 260px;
+
+}
+
+.image-var{
+    display: flex;
+    border: black solid 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.paragraph-var{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.image-easports{
+    display: flex;
+    border: black solid  5px;
+}
+
+.paragraph-easports{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+
+/* decoracion para Agenda*/
+
+.agenda-content{
+    display: grid;
+    margin: 1.20em auto;
+    grid-template-columns: repeat(2,1fr);
+    background: #eee;
+}
+
+.main-content{
+    margin-left: 20px;
+}
+
+
+
+.list-agenda{
+    margin-bottom: 40px;
+}
+
+ul,li{
+    margin-bottom: 40px;
+}
+
+.container-agenda{
+    display: grid;
+    grid-column: 2;
+    margin-left: 300px;
+}
+
+.first-image{
+    border: 5px solid;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.second-image{
+    margin-bottom: 60px;
+    border: 5px solid;
+    margin-right: 60px;
+}
+
+.third-image{
+    border: 5px solid;
+    margin-right: 60px;
+    margin-bottom: 40px;
+}
+
+
+
+/*pagina torneo decoracion*/
+
+
+#principal-section h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+#principal-section ul{
+    display: inline-block;
+    margin-bottom: 140px;
+    
+}
+
+#principal-section li{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 40px
+}
+
+.image-tournament
+
+#principal-section{
+    padding: 0 0 150px 0;
+}
+
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.image-container img {
+    width: 33.33%;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.button-container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.my-button {
+    padding: 10px 20px;
+    
+}
+
+.my-button{
+    background-color: #294f8c;
+}
+
+.my-button:hover{
+    color: white;
+}
+
+
+.tournaments img{
+    border: 5px solid black;
+    
+}
+
+.tournaments h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+.title-tournaments{
+    display: flex;
+    justify-content: center;
+    color: #294f8c;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* pagina de contacto*/
+.contact-page{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg)  ; 
+    background-position: right top;
+    background-size: cover;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(#FFFFFF);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    
+}
+.title-contact{
+    color:white;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+label{
+    color:white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+input,textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    outline: none;
+}
+form #Enviar{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-transform: uppercase;
+}
+
+
+.btn{
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border: radius 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+}
+
+@media(max-width:1000px) {
+    
+
+form{
+    padding: 50px 30px;
+    width: 100px;
+}
+input{
+    padding: 15px;
+}
+}
+
+
+footer{
+    text-align: center;
+
+}
+

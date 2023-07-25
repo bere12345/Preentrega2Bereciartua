@@ -1,2 +1,0 @@
-# tomibere
-proyecto pagina web
