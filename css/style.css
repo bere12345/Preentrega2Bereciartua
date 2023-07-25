@@ -389,9 +389,21 @@ background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg)
     
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .contact-page{
-        background-size: contain;
+        background-size: 100% auto;
+        aspect-ratio: 4/3;
+        object-fit: co;
+
+    }
+
+    form{
+        padding: 30px;
+
+    }
+    input,
+    textarea{
+        padding: 10px;
     }
 }
 
@@ -453,7 +465,7 @@ cursor: pointer;
     background-color: green;
 }
 
-@media(max-width:1000px) {
+@media(max-width:767px) {
     
 
 form{
