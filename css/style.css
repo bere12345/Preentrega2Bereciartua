@@ -374,27 +374,26 @@ ul,li{
 
 /* pagina de contacto*/
 .contact-page{
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg)  ; 
     background-position: right top;
-    background-size: cover;
+    background-size: 100% 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
     background-repeat: no-repeat;
+    color: white;
     
     
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     .contact-page{
-        background-size: 100% auto;
-        aspect-ratio: 4/3;
-        object-fit: co;
-
+        background-size: auto 100%;
     }
 
     form{
@@ -403,7 +402,11 @@ background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg)
     }
     input,
     textarea{
-        padding: 10px;
+        padding: 10px 15px;
+    }
+
+    .input-group{
+        padding: 0 15px;
     }
 }
 
@@ -466,11 +469,15 @@ cursor: pointer;
 }
 
 @media(max-width:767px) {
+
+    .title-contact{
+        font-size: 30px;
+    }
     
 
 form{
-    padding: 50px 30px;
-    width: 100px;
+    padding: 30px;
+    width: 90%;
 }
 input{
     padding: 15px;
