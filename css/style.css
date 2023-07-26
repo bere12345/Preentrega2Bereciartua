@@ -380,11 +380,11 @@ ul,li{
     display: flex;
     justify-content: center;
     align-items: center;
-background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg)  ; 
+    background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg); 
     background-position: right top;
-    background-size: 100% 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+    background-size: cover;
+    
+    
     background-repeat: no-repeat;
     color: white;
     
