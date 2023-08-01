@@ -15,8 +15,14 @@ header {
 }
 
 .nav-important .nav-item {
+  text-decoration: none;
+  color: black;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+}
+
+.nav-important:hover {
+  color: white;
 }
 
 .header-info {
