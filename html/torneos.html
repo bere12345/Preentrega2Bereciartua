@@ -8,104 +8,122 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcun icon" href="../img/logoinicio.png" type="image/png">
 </head>
-<body ">
+<body class="fondo">
     
     <header class="important">
-        <div class="logo">
-            <img src="../img/logoinicio.png" alt="logo de la pagina">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-lg-3">
+                    <div class="logo">
+                        <img src="../img/logoinicio.png" alt="logo de la pagina" style="max-width: 150px;">
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9 d-flex justify-content-between align-items-center">
+                    <h2 class="title-argentina">ASOSIACION FUTBOL ARGENTINO</h2>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGINAS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../index.html">Menu Principal</a></li> 
+                            <li><a class="dropdown-item" href="../html/contacto.html">Contacto</a></li>
+                            <li><a class="dropdown-item" href="../html/agenda.html">Agenda</a></li>
+                            <li><a class="dropdown-item" href="../html/noticias.html">Noticias</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <h2 class="title-argentina">ASOSIACION FUTBOL ARGENTINO</h2>
-        
-        <nav class="nav-important">
-            <a href="../index.html" target="_blank" class="nav-noticies">Menu Principal</a> 
-            <a href="./contacto.html" target="_blank" class="nav-contact">Contacto</a>
-            <a href="./agenda.html" target="_blank" class="nav-start">Agenda</a>
-            <a href="./torneos.html" target="_blank" class="nav-tournaments">Torneos</a>
-            
-        </nav>
-        
+        </div>
     </header>
 
 
-    <section id="principal-section">
+
+
         <div class="container">
-            <h2>TORNEOS ARGENTINOS</h2>
-            <div class="list-tournaments">
-            <ul>
-                <li>Torneo Binance</li>
-                <li>Copa Argentina</li>
-                <li>Primera B</li>
-                <li>Division C</li>
-            </ul>
-        </div>
-            
-
-        </div>
-    </section>
-
-    
-    <section id="tournaments-section">
-
-            <div class="container"></div>
-            <h2 class="title-tournaments">Nuestros torneos</h2>
-            <div class="tournaments">
-                <h3>Copa Binance</h3>
-                <div class="image-container">
-                <img src="../img/foto-copaargentina.jpg" alt="" height="280px" width="380px">
+            <div class="row">
+            <div class="col-md-6">
+                <!-- Título principal -->
+                <h1 class="text-center title-tournaments">TORNEOS FUTBOL ARGENTINO</h1>
+                <div class="card-section left-card">
+                <img src="../img/copa-libertadores.jpg" alt="Imagen 1">
+                <h2 class="subtitle-tournaments"><strong>COPA LIBERTADORES DE AMERICA</strong></h2>
+                <p class="section-subtitle"><strong>esta copa se disputara a partir de marzo hasta noviembre</strong></p>
+                </div>
+                <div class="card-section left-card">
+                <img src="../img/copa-sudamericana.jpg" alt="Imagen 2">
+                <h2 class="subtitle-tournaments"><strong>COPA SUDAMERICANA</strong></h2>
+                <p class="section-subtitle">esta copa es la segunda copa mas importante a nivel internacional y se disputara en las mismas fecha que la libertadores</p>
+                </div>
+                <div class="card-section left-card">
+                <img src="../img/copa-argenina.jpg" alt="Imagen 3">
+                <h2 class="subtitle-tournaments"><strong>COPA ARGENTINA</strong></h2>
+                <p class="section-subtitle">Copa donde juegan equipos de diferentes divisiones buscando la clasificacion a la copa libertadores entre otras cosas</p>
+                </div>
             </div>
-
-            <div class="button-container">
-                <button class="my-button">+INFO</button>
-            </div>
-                
-            </div>
-
-            <div class="tournaments">
-                
-                <h3>Copa Argentina</h3>
-                
-                <div class="image-container">
-                <img src="../img/copa-argenina.jpg" alt="" height="280px" width="360px">
-                <div class="button-container">
-                    <button class="my-button">+INFO</button>
+            <div class="col-md-6">
+                <div class="card-section right-card">
+                <img src="../img/Trofeo-de-la-Primera-B.jpg" alt="Imagen 5">
+                <h2 class="subtitle-tournaments"><strong>PRIMERA B NACIONAL</strong></h2>
+                <p class="section-subtitle">torneo que disputan la seguna mayor categoria del futbol argentino</p>
+                </div>
+                <div class="card-section right-card">
+                <img src="../img/basquet-trofeo.jpg" alt="Imagen 6">
+                <h2 class="subtitle-tournaments"><strong>TROFEO BASQUET</strong></h2>
+                <p class="section-subtitle">Trofeo basquet argentina</p>
+                </div>
+                <div class="card-section right-card">
+                <img src="../img/trofeo-liga-arg.jpg" alt="Imagen 7">
+                <h2 class="subtitle-tournaments"><strong>TROFEO PRIMERA DIVISION</strong></h2>
+                <p class="section-subtitle">Mini Subtítulo</p>
                 </div>
             </div>
             </div>
+        </div>
         
 
-            <div class="tournaments">
-                <h3>Primera B</h3>
-                
-                <div class="image-container">
-                <img src="../img/Trofeo-de-la-Primera-B.jpg" alt="" height="280px" width="360px"> 
-                <div class="button-container">
-                <button class="my-button">+INFO</button>
+    
+
+    <hr>
+    <footer class="bg-light text-dark pt-5 pb-4">
+        <div class="container text-center text-nd-start">
+            <div class="row text-center text-md-start">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">asosiacion futbol argentino</h5>
+                    <hr class="mb-4">
+                    <p>aca encontraras todas nuestras redes sociales y podras seguirnos para disftutar todo el contenido de nuestras paginas web</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">redes sociales</h5>
+                    <hr class="mb-4">
+                    <a href="https://www.instagram.com/afaseleccion/" target="_blank">
+                        <img src="../img/igicono.png" alt="logoig">
+                    </a>
+                    <a href="https://twitter.com/afa" target="_blank">
+                        <img src="../img/logo-twitter.png" alt="logo-twitter">
+                    </a>
+                    <a href="https://www.facebook.com/AFASeleccionArgentina" target="_blank">
+                        <img src="../img/logo-facebook.png" alt="logo-facebook">
+                    </a>
+                    <a href="https://www.youtube.com/@AFASeleccion" target="_blank">
+                        <img src="../img/logo-youtube.png" alt="logo-youtube">
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
             </div>
-            </div>
-            </div>
 
 
-    </div>
-
-    </div>
-
-
-        </section>
-        <hr>
-
-        <footer>
-            <div class="redes">
-                <a href="https://www.instagram.com/afaseleccion/" target="_blank">
-                    <img src="../img/igicono.png" alt="logo instagram" height="3%" width="3%">
-                </a>
-                <a href="https://twitter.com/afa" target="_blank">
-                    <img src="../img/logo-twitter.png" alt="logo twitter" width="3%" height="3%">
-                </a>
-                <a href="https://www.facebook.com/AFASeleccionArgentina" target="_blank">
-                    <img src="../img/logo-facebook.png " alt="logo facebook" width="3%" height="3%">
-                </a>
-
-        </footer>
+        </div>
+        
+    </footer>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

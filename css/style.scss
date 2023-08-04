@@ -21,6 +21,45 @@ header{
     padding: auto;
 }
 
+    .dropdown {
+        position: relative;
+        .btn-secondary {
+        border: none;
+        background-color: #000; 
+        color: #fff; 
+        &:focus {
+            box-shadow: none;
+        }
+        &::after {
+            display: none; 
+        }
+        }
+        .dropdown-menu {
+        background-color: #000; 
+        .dropdown-item {
+            color: #fff; 
+            &:hover {
+            background-color: #333; 
+            }
+        }
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .nav-important {
+        display: none;
+        }
+        .dropdown {
+        display: block;
+        }
+        .dropdown-menu {
+        display: none;
+        &.show {
+            display: block;
+        }
+        }
+    }
+
 
 .nav-important .nav-item{
     text-decoration: none;
@@ -28,6 +67,11 @@ header{
 
     font-size: 18px;
     font-family: 'Roboto', sans-serif;;
+}
+
+
+.nav-item:hover{
+    color: white;
 }
 
 .nav-important:hover{
@@ -94,15 +138,21 @@ nav a:hover{
         }
 }
 
-.carousel-inner ,h5,p{
+.carousel-inner ,p{
     color: white;
     text-transform: uppercase;
 
 }
 
 
-.carousel-item ,h1, p{
+.carousel-item ,h2f, p{
     color: white;
+}
+
+
+.carousel-container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -111,6 +161,18 @@ nav a:hover{
 /*decoracion pagina principal*/
 
 
+
+
+.carousel-item{
+    position: relative;
+}
+
+
+
+
+.title-carousel{
+    color: white;
+}
 .body-content{
     background-color: #eee;
     width: 100%;
@@ -197,7 +259,6 @@ nav a:hover{
 .container{
     margin-top: 50px;
 }
-
 
 
 
@@ -324,87 +385,49 @@ ul,li{
 /*pagina torneo decoracion*/
 
 
-#principal-section h2{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    padding-bottom: 40px;
-}
-
-#principal-section ul{
-    display: inline-block;
-    margin-bottom: 140px;
-    
-}
-
-#principal-section li{
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 40px
-}
-
-.image-tournament
-
-#principal-section{
-    padding: 0 0 150px 0;
-}
-
-
-
-.image-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: flex-start; 
-}
-
-.image-container img {
-    width: 33.33%;
-    height: auto;
-    margin-bottom: 10px; 
-}
-
-.button-container {
-    width: 100%; 
-    display: flex;
-    justify-content: center; 
-}
-
-.my-button {
-    padding: 10px 20px;
-    
-}
-
-.my-button{
-    background-color: #294f8c;
-}
-
-.my-button:hover{
-    color: white;
-}
-
-
-.tournaments img{
-    border: 5px solid black;
-    
-}
-
-.tournaments h3{
-    display: flex;
-    justify-content: center;
-}
-
-
 .title-tournaments{
-    display: flex;
-    justify-content: center;
+    margin-bottom: 60px;
+    text-align: center;
     color: #294f8c;
-    margin-bottom: 70px;
-    text-transform: uppercase;
+
 }
 
+.subtitle-tournaments{
+    margin-top: 19px;
+}
+    .main-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+    .card-section {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .card-section h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .card-section p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
+
+.right-card{
+    margin-top: 110px;
+    margin-left: 300px;
+}
 
 
 
@@ -420,8 +443,6 @@ ul,li{
     background-image: url(https://www.afa.com.ar/upload/banners/FqjS3buWYAAln7i.jpg); 
     background-position: right top;
     background-size: cover;
-    
-    
     background-repeat: no-repeat;
     color: white;
     
@@ -496,12 +517,12 @@ text-transform: uppercase;
     color: #FFFFFF;
     border: 0;
     border: radius 25px;
-    background-color: #51D94C;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    background-color: #000;
+    box-shadow: #294f8c;
 cursor: pointer;
 }
 .btn:hover{
-    background-color: green;
+    background-color: #000;
 }
 
 @media(max-width:767px) {
