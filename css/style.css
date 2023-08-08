@@ -122,7 +122,7 @@ nav a:hover {
   text-transform: uppercase;
 }
 
-.carousel-item, h2f, p {
+.carousel-item, p {
   color: white;
 }
 
@@ -132,6 +132,14 @@ nav a:hover {
 }
 
 /*decoracion pagina principal*/
+.title-argentina {
+  font-size: 2rem;
+  margin: inherit;
+  font-weight: 1000;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .carousel-item {
   position: relative;
 }
@@ -167,8 +175,7 @@ nav a:hover {
   margin-bottom: 100px;
 }
 
-.article, h1 .article,
-p {
+.article, p {
   color: black;
   margin-top: 30px;
 }
@@ -368,7 +375,7 @@ ul, li {
 
 .right-card {
   margin-top: 110px;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
 /* pagina de contacto*/
