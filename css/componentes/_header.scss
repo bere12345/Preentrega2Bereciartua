@@ -1,0 +1,125 @@
+header{
+    display: flex;
+    background-color: #294f8c;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    padding: auto;
+}
+
+    .dropdown {
+        position: relative;
+        .btn-secondary {
+        border: none;
+        background-color: #000; 
+        color: #fff; 
+        &:focus {
+            box-shadow: none;
+        }
+        &::after {
+            display: none; 
+        }
+        }
+        .dropdown-menu {
+        background-color: #000; 
+        .dropdown-item {
+            color: #fff; 
+            &:hover {
+            background-color: #333; 
+            }
+        }
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .nav-important {
+        display: block;
+        }
+        .dropdown {
+        display: block;
+        }
+        .dropdown-menu {
+        display: none;
+        &.show {
+            display: block;
+        }
+        }
+    }
+
+
+.nav-important .nav-item{
+    text-decoration: none;
+    color: black;
+
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+
+.nav-item:hover{
+    color: white;
+}
+
+.nav-important:hover{
+    color: white;
+}
+
+
+.header-info{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.logo{
+    display: flex;
+    margin-right: 40px;
+}
+
+.logo img{
+    height: 90px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+
+}
+
+nav a{
+    font-weight: 600;
+    
+}
+
+nav a:hover{
+    color: white;
+}
+
+
+.nav-important{
+    text-decoration: none;
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: row;
+    }
+
+    nav{
+        padding: 40px 0px 20px;
+    }
+
+    .title-argentina{
+        display: flex;
+        align-items: center;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .logo{
+        align-items: flex-start;
+        justify-content: center;
+        }
+}

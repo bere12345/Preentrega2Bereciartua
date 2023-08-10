@@ -1,142 +1,21 @@
-
-
+@use "./componentes/header" as header;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$color-fondo:#294f8c;
+$titulo-principal:2rem;
+
+
+
 
 body{
     font-family: sans-serif;
     margin: 0;
-}
-
-/* header*/
-
-
-
-
-header{
-    display: flex;
-    background-color: #294f8c;
-    justify-content: space-between;
-    min-height: 70px;
-    align-items: center;
-    padding: auto;
-}
-
-    .dropdown {
-        position: relative;
-        .btn-secondary {
-        border: none;
-        background-color: #000; 
-        color: #fff; 
-        &:focus {
-            box-shadow: none;
-        }
-        &::after {
-            display: none; 
-        }
-        }
-        .dropdown-menu {
-        background-color: #000; 
-        .dropdown-item {
-            color: #fff; 
-            &:hover {
-            background-color: #333; 
-            }
-        }
-        }
+    h1{
+        font-weight: $titulo-principal;
     }
-    
-    @media (max-width: 768px) {
-        .nav-important {
-        display: none;
-        }
-        .dropdown {
-        display: block;
-        }
-        .dropdown-menu {
-        display: none;
-        &.show {
-            display: block;
-        }
-        }
-    }
-
-
-.nav-important .nav-item{
-    text-decoration: none;
-    color: black;
-
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;;
 }
 
-
-.nav-item:hover{
-    color: white;
-}
-
-.nav-important:hover{
-    color: white;
-}
-
-
-.header-info{
-    display: flex;
-    justify-content: flex-end;
-    
-}
-
-.logo{
-    display: flex;
-    margin-right: 40px;
-}
-
-.logo img{
-    height: 90px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-
-}
-
-nav a{
-    font-weight: 600;
-    
-}
-
-nav a:hover{
-    color: white;
-}
-
-
-.nav-important{
-    text-decoration: none;
-}
-
-
-@media (max-width:700px){
-    header{
-        flex-direction: row;
-    }
-
-    nav{
-        padding: 40px 0px 20px;
-    }
-
-    .title-argentina{
-        display: flex;
-        align-items: center;
-        color: black;
-        text-transform: uppercase;
-    }
-
-    .logo{
-        align-items: flex-start;
-        justify-content: center;
-        }
-}
 
 .carousel-inner ,p{
     color: white;
@@ -162,7 +41,7 @@ nav a:hover{
 
 
 .title-argentina{
-    font-size: 2rem ; 
+    font-size: $titulo-principal; 
     margin: inherit;
     font-weight: 1000;
     color: black;
@@ -340,59 +219,51 @@ nav a:hover{
 
 /* decoracion para Agenda*/
 
-.agenda-content{
-    display: grid;
-    margin: 1.20em auto;
-    grid-template-columns: repeat(2,1fr);
-    background: #eee;
+.title-container{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
 }
 
-.main-content{
-    margin-left: 20px;
-}
+    .card {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+        margin-bottom: 20px;
+        margin-right: 200px;
+    }
+    
+    .card:last-child {
+        margin-right: 100px;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card-title {
+        margin-top: 0;
+    }
+    
+    .card-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+        border-radius: 5px;
+    }  
 
-
-
-.list-agenda{
-    margin-bottom: 40px;
-}
-
-ul,li{
-    margin-bottom: 40px;
-}
-
-.container-agenda{
-    display: grid;
-    grid-column: 2;
-    margin-left: 300px;
-}
-
-.first-image{
-    border: 5px solid;
-    margin-bottom: 100px;
-    margin-top: 40px;
-    margin-right: 40px;
-}
-
-.second-image{
-    margin-bottom: 60px;
-    border: 5px solid;
-    margin-right: 60px;
-}
-
-.third-image{
-    border: 5px solid;
-    margin-right: 60px;
-    margin-bottom: 40px;
-}
-
-
+    .card-description{
+        margin-top: 40px;
+    }
 
 /*pagina torneo decoracion*/
 
 
-.title-tournaments{
-    margin-bottom: 60px;
+.title-agenda{
+    margin-top: 80px;
     text-align: center;
     color: #294f8c;
 
@@ -433,6 +304,46 @@ ul,li{
 .right-card{
     margin-top: 110px;
     margin-left: 200px;
+}
+
+.list-container {
+    background-color: $color-fondo;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+
+    h3{
+        color: white;
+    }
+
+    li{
+        margin-top: 40px;
+        color: white;
+    }
+}
+
+.list-title {
+    margin-top: 0;
+}
+
+.list-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-items li {
+    margin-bottom: 10px;
+}
+
+.image-container {
+    text-align: right;
+}
+
+.list-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 
@@ -525,7 +436,7 @@ text-transform: uppercase;
     border: radius 25px;
     background-color: #000;
     box-shadow: #294f8c;
-cursor: pointer;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: #000;
