@@ -1,0 +1,134 @@
+.carousel-inner ,p{
+    color: white;
+    text-transform: uppercase;
+
+}
+
+
+.carousel-item , p{
+    color: white;
+}
+
+
+.carousel-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.style-carousel{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.title-argentina{
+    font-size: 2rem; 
+    margin: inherit;
+    font-weight: 1000;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.carousel-item{
+    position: relative;
+}
+
+
+
+
+.title-carousel{
+    color: white;
+}
+.body-content{
+    background-color: #eee;
+    width: 100%;
+    margin: 1.9em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.content{
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.col{
+    justify-content: center;
+    display: flex;
+
+}
+
+
+.article-two ,p{
+    margin-right: 30px;
+}
+
+
+.article{
+    margin-bottom: 100px;
+    
+}
+
+
+
+.article ,p{
+    color: black;
+    margin-top: 30px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.style-carousel p{
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#carouselExampleDark{
+    margin-right: 40px;
+}
+
+
+.paragraph-barracas{
+    margin-left: 40px;
+}
+
+.image-femenino{
+    border: black solid 6px;
+    display: flex;
+}
+
+.paragraph-femenino{
+    margin-left: 40px;
+}
+
+
+@media (max-width: 767px){
+    .style-carousel{
+        width: 100%;
+    }
+    .style-carousel p{
+        font-size: 10px;
+    }
+
+    .style-carousel h5{
+        font-size: 10px;
+    }
+}
+
+
+.container{
+    margin-top: 50px;
+}

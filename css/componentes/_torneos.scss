@@ -1,0 +1,96 @@
+.title-agenda{
+    margin-top: 80px;
+    text-align: center;
+    color: #294f8c;
+
+}
+
+.subtitle-tournaments{
+    margin-top: 19px;
+}
+    .main-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+    .card-section {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .card-section h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .card-section p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+.right-card{
+    margin-top: 110px;
+    margin-left: 200px;
+}
+
+.list-container {
+    background-color: #294f8c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+
+    h3{
+        color: white;
+    }
+
+    li{
+        margin-top: 40px;
+        color: white;
+    }
+}
+
+.list-title {
+    margin-top: 0;
+}
+
+.list-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-items li {
+    margin-bottom: 10px;
+}
+
+.image-container {
+    text-align: right;
+}
+
+.list-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.card-image{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.card-section img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}

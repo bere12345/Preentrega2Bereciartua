@@ -1,0 +1,107 @@
+.article-content p{
+    font-weight: bold;
+}
+
+.notice-content{
+    display: grid;
+    margin: 1.19em auto;
+    grid-template-columns: repeat(2,1fr);
+    background: #eee;
+    margin-left: px;
+}
+
+.image-tapia{
+    border: black solid 5px;
+}
+
+.column-images{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: end;
+    margin-left: 50px;
+}
+
+
+.image-secondary{
+    border: black solid 5px;
+    display: flex;
+    
+}
+
+.paragraph-kinesiologos{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.article-content p{
+    margin-left: 20px;
+}
+
+.article-content h2{
+    margin-left: 260px;
+
+}
+
+.image-var{
+    display: flex;
+    border: black solid 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.paragraph-var{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.image-easports{
+    display: flex;
+    border: black solid  5px;
+}
+
+.paragraph-easports{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+
+/* decoracion para Agenda*/
+
+.title-container{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+    .card {
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+        margin-bottom: 20px;
+        margin-right: 200px;
+    }
+    
+    .card:last-child {
+        margin-right: 100px;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card-title {
+        margin-top: 0;
+    }
+    
+    .card-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+        border-radius: 5px;
+    }  
+
+    .card-description{
+        margin-top: 40px;
+    }
