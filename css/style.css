@@ -74,6 +74,8 @@
 }
 
 .style-carousel p {
+  font-size: 16px;
+  line-height: 1.5;
   color: #FFFFFF;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -96,21 +98,29 @@
   margin-left: 40px;
 }
 
-@media (max-width: 767px) {
-  .style-carousel {
-    width: 100%;
-  }
-  .style-carousel p {
-    font-size: 10px;
-  }
-  .style-carousel h5 {
-    font-size: 10px;
-  }
-}
 .container {
   margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item .carousel-caption {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 12px;
+    line-height: 1.4;
+    max-height: 65%;
+    overflow-y: auto;
+  }
+}
 header {
   display: flex;
   background-color: #294f8c;
@@ -156,6 +166,17 @@ header {
   }
   .dropdown-menu.show {
     display: block;
+  }
+  .logo {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .title-argentina {
+    text-align: center;
+    font-size: 20px;
+  }
+  .dropdown {
+    text-align: right;
   }
 }
 .nav-important .nav-item {
@@ -286,46 +307,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* decoracion para Agenda*/
-.title-container {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-  margin-bottom: 20px;
-  margin-right: 200px;
-}
-
-.card:last-child {
-  margin-right: 100px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-title {
-  margin-top: 0;
-}
-
-.card-image {
-  max-width: 100%;
-  height: auto;
-  margin-top: 15px;
-  border-radius: 5px;
-}
-
-.card-description {
-  margin-top: 40px;
-}
-
 .title-agenda {
   margin-top: 80px;
   text-align: center;
@@ -371,6 +352,10 @@ nav a:hover {
 .right-card {
   margin-top: 110px;
   margin-left: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .list-container {
@@ -419,9 +404,25 @@ nav a:hover {
 .card-section img {
   object-fit: cover;
   width: 100%;
-  height: 200px;
+  height: 650px;
+}
+.card-section img .right-card {
+  width: 100%;
+  margin: 10px auto;
+  max-width: 400px;
 }
 
+@media (max-width: 766px) {
+  .container {
+    flex-direction: column;
+  }
+  .col-12.col-md-6 {
+    width: 100%;
+  }
+  .right-card {
+    margin: 20px auto;
+  }
+}
 body {
   font-family: sans-serif;
   margin: 0;
@@ -430,7 +431,6 @@ body h1 {
   font-weight: 2rem;
 }
 
-/*pagina torneo decoracion*/
 /* pagina de contacto*/
 .contact-page {
   margin: 0;
@@ -517,7 +517,7 @@ form #Enviar {
 }
 
 .btn:hover {
-  background-color: #000;
+  background-color: #294f8c;
 }
 
 @media (max-width: 767px) {
@@ -531,6 +531,49 @@ form #Enviar {
   input {
     padding: 15px;
   }
+}
+.title-contact-two {
+  font-size: 20px;
+}
+
+/* decoracion para Agenda*/
+.title-container {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px;
+  margin-right: 200px;
+}
+
+.card:last-child {
+  margin-right: 100px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.card-description {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
