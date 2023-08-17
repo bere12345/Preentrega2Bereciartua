@@ -117,8 +117,12 @@
   .carousel-inner .carousel-item .carousel-caption p {
     font-size: 12px;
     line-height: 1.4;
-    max-height: 65%;
-    overflow-y: auto;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card-content {
+    order: 1;
   }
 }
 header {
@@ -574,6 +578,12 @@ form #Enviar {
 
 .card-description {
   margin-top: 40px;
+}
+
+.card-destacada {
+  margin-top: 40px;
+  max-height: 700px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

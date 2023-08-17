@@ -140,8 +140,14 @@
     
         .carousel-inner .carousel-item .carousel-caption p {
         font-size: 12px; 
-        line-height: 1.4; 
-        max-height: 65%; 
-        overflow-y: auto; 
+        line-height: 1.4;  
+        }
+
+        .card{
+            flex-direction: column;
+        }
+
+        .card-content{
+            order: 1;
         }
     }
